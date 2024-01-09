@@ -10,7 +10,7 @@ pipeline {
             }
         }
 environment {
-    PATH = "$PATH:/opt/apache-maven-3.9.6/bin"
+    PATH = "/opt/apache-maven-3.9.6/bin:$PATH"
 }
         stage('Build') {
             steps {
