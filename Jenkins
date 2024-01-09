@@ -1,0 +1,13 @@
+pipeline {
+    agent {
+        label 'mavennode'
+    }
+
+    stages {
+        stage('clone repos') {
+            steps {
+                git branch: 'main', url: 'https://github.com/jireschamfort/tweet-trend-new.git'
+            }
+        }
+    }
+}
